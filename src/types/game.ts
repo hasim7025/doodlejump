@@ -11,6 +11,9 @@ export interface Player {
   velocityX: number;
   width: number;
   height: number;
+  rotation: number;
+  scale: number;
+  isJumping: boolean;
 }
 
 export interface GameState {
