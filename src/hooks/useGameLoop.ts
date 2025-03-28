@@ -308,7 +308,7 @@ export const useGameLoop = (canvasRef: React.RefObject<HTMLCanvasElement>) => {
       // Text shadow
       ctx.fillStyle = 'rgba(0, 0, 0, 0.3)';
       ctx.font = 'bold 40px Inter, system-ui, -apple-system, sans-serif';
-      ctx.fillText('Game Over!', -82, 2);
+      ctx.fillText('Game Over!', -110, 2);
       
       // Text with gradient
       const textGradient = ctx.createLinearGradient(-100, -20, 100, 20);
@@ -316,12 +316,12 @@ export const useGameLoop = (canvasRef: React.RefObject<HTMLCanvasElement>) => {
       textGradient.addColorStop(1, '#e0e0e0');
       ctx.fillStyle = textGradient;
       ctx.font = 'bold 40px Inter, system-ui, -apple-system, sans-serif';
-      ctx.fillText('Game Over!', -80, 0);
+      ctx.fillText('Game Over!', -108, 0);
       
       // Restart text
       ctx.font = '20px Inter, system-ui, -apple-system, sans-serif';
       ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
-      ctx.fillText('Press Space to Restart', -90, 40);
+      ctx.fillText('Press Space to Restart', -100, 40);
       
       ctx.restore();
     }
